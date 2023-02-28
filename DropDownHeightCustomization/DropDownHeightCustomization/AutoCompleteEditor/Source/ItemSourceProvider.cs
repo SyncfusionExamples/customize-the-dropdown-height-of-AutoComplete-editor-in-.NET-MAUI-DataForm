@@ -2,7 +2,7 @@
 
 namespace DropDownHeightCustomization
 {
-    internal class ItemSourceProvider : IDataFormSourceProvider
+    public class ItemSourceProvider : IDataFormSourceProvider
     {
         public object GetSource(string sourceName)
         {
