@@ -22,5 +22,15 @@ namespace DropDownHeightCustomization
                 autoComplete.MaxDropDownHeight = 90;
             }
         }
+        protected override void OnDetachingFrom(SfDataForm dataForm)
+        {
+            base.OnDetachingFrom(dataForm);
+            if (dataForm != null)
+            {
+                dataForm.GenerateDataFormItem -= this.OnGenerateDataItem;
+            }
+
+            dataForm = null;
+        }
     }
 }
