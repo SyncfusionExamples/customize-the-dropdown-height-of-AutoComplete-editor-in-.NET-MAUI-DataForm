@@ -3,7 +3,7 @@ This repository contains a sample of how to customize the dropdown height of Aut
 
 Please refer the KB through this link.
 
-# Syncfusion controls
+## Syncfusion controls
 
 This project used the following Syncfusion control(s):
 * [SfDataForm](https://www.syncfusion.com/maui-controls/maui-dataform)
