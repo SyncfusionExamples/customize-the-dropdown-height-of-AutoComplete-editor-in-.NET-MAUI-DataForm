@@ -5,6 +5,7 @@
              xmlns:dataForm="clr-namespace:Syncfusion.Maui.DataForm;assembly=Syncfusion.Maui.DataForm"
              x:Class="DropDownHeightCustomization.MainPage">
     <dataForm:SfDataForm x:Name="dataForm"
+                         x:DataType="local:DataFormViewModel"
                          DataObject="{Binding DataFormModel}">
         <dataForm:SfDataForm.BindingContext>
             <local:DataFormViewModel/>

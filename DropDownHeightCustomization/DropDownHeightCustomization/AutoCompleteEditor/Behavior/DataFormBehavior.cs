@@ -15,7 +15,7 @@ namespace DropDownHeightCustomization
             dataForm.RegisterEditor("City", DataFormEditorType.ComboBox);
             dataForm.GenerateDataFormItem += OnGenerateDataItem;
         }
-        private void OnGenerateDataItem(object sender, GenerateDataFormItemEventArgs e)
+        private void OnGenerateDataItem(object? sender, GenerateDataFormItemEventArgs e)
         {
             if (e.DataFormItem != null && e.DataFormItem is DataFormAutoCompleteItem autoComplete)
             {
@@ -29,8 +29,6 @@ namespace DropDownHeightCustomization
             {
                 dataForm.GenerateDataFormItem -= this.OnGenerateDataItem;
             }
-
-            dataForm = null;
         }
     }
 }
